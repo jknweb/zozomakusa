@@ -15,8 +15,8 @@ gallery.html      Réalisations (galerie filtrable + lightbox)
 contact.html      Demande de réservation → WhatsApp
 css/style.css     Design system complet (tokens, composants, responsive)
 js/main.js        WhatsApp, navigation, menu mobile, animations, galerie, slider, formulaire
-images/           Favicons, image Open Graph, monogramme provisoire
-images/placeholders/  Visuels provisoires (SVG) à remplacer par les vraies photos
+images/           Photos zo1–zo11 (originaux), logo (logozozo.jpg + logo-zozomakusa.png détouré), favicons, image Open Graph
+images/opt/       Versions WebP responsives des photos (640px + pleine largeur), servies via srcset
 ```
 
 ## Direction artistique
@@ -56,21 +56,24 @@ recherchez `class="ph"` dans les fichiers HTML.
 | Plats, prix par personne, minimum d'invités | accueil, menus |
 | Inclus/options (service, matériel, boissons) | services, FAQ |
 | Avis clients réels (les textes actuels sont des exemples identifiés) | accueil |
-| Photos (hero, prestations, menus, galerie, réseaux) | `images/placeholders/*.svg` |
-| Logo officiel (le monogramme actuel est provisoire) | header/footer, favicons |
 | Domaine définitif (`VOTRE-DOMAINE.com`) | balises canonical / Open Graph |
 | Mentions légales, confidentialité | footer |
 
 Éléments repérés publiquement (à confirmer par le client avant publication) : formules Silver, Gold, Platinum, Cocktail et Petit-déjeuner ; prestations mariages, anniversaires, séminaires, baptêmes, pauses-café ; options viande, légumes et végétarien.
 
-### Remplacer les photos
+### Photos et logo
 
-Remplacez chaque `images/placeholders/xxx.svg` par une photo optimisée (WebP/JPG, ~1920px pour le hero, 900–1200px ailleurs) et mettez à jour `src`, `width`, `height`. Pour des images responsives, ajoutez `srcset` + `sizes`, ex. :
+- Le logo officiel `images/logozozo.jpg` est recadré et détouré dans `images/logo-zozomakusa.png` (header, footer). Il sert aussi pour les favicons et l'image Open Graph.
+- Les photos `zo1` à `zo11` remplissent le hero, les prestations, les formules, la galerie (filtres Buffets / Cuisine / Cocktail & desserts / Service), la mosaïque d'accueil et la section réseaux.
+- Chaque photo est servie en WebP responsive (`images/opt/zoN-640.webp` + pleine largeur) avec le JPEG d'origine en secours.
+- Les photos font ~1170px de large : pour un hero encore plus net sur grand écran, fournir une version ≥ 1920px.
+
+Pour ajouter une photo, déposez-la dans `images/`, créez ses versions WebP dans `images/opt/`, puis :
 
 ```html
-<img src="images/mariage-1280.webp"
-     srcset="images/mariage-640.webp 640w, images/mariage-1280.webp 1280w, images/mariage-1920.webp 1920w"
-     sizes="(min-width: 1024px) 25vw, 100vw" width="1280" height="1600" loading="lazy" decoding="async" alt="…">
+<img src="images/zo12.jpeg"
+     srcset="images/opt/zo12-640.webp 640w, images/opt/zo12-1170.webp 1170w"
+     sizes="(min-width: 1024px) 25vw, 100vw" width="1170" height="780" loading="lazy" decoding="async" alt="…">
 ```
 
 Le hero accepte une vidéo (code prêt en commentaire dans `index.html`).

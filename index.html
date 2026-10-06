@@ -26,7 +26,7 @@
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" sizes="any">
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/icon-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
   <!-- Polices : Cormorant Garamond (titres) + Manrope (textes) -->
@@ -44,6 +44,7 @@
     "description": "Traiteur et service événementiel : mariages, réceptions privées, événements d'entreprise, cocktails.",
     "url": "https://VOTRE-DOMAINE.com/",
     "image": "https://VOTRE-DOMAINE.com/images/og-image.jpg",
+    "logo": "https://VOTRE-DOMAINE.com/images/logo-zozomakusa.png",
     "servesCuisine": "[À compléter]",
     "areaServed": "[Ville, Pays — à compléter]",
     "telephone": "[WHATSAPP_NUMBER]",
@@ -58,7 +59,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="index.html" aria-label="ZozoMakusa — accueil">
-        <svg class="brand__mark" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M32 3 61 32 32 61 3 32Z"/><path d="M32 9 55 32 32 55 9 32Z" stroke-opacity=".45"/><path d="M23 24h18L23 40h18" stroke-width="2.4" stroke-linecap="square"/></svg>
+        <img class="brand__logo" src="images/logo-zozomakusa.png" width="228" height="228" alt="">
         <span class="brand__name">ZozoMakusa<small>Gastronomie &amp; événements</small></span>
       </a>
       <nav class="nav" aria-label="Navigation principale">
@@ -106,9 +107,8 @@
     <!-- 1. HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__media">
-        <!-- PLACEHOLDER : grande photo (min. 1920×1200) ou vidéo courte (ambiance service / dressage).
-             Vidéo : <video autoplay muted loop playsinline poster="images/hero.jpg"><source src="images/hero.mp4" type="video/mp4"></video> -->
-        <img src="images/placeholders/hero.svg" alt="Table de réception dressée par ZozoMakusa (photo à remplacer)" width="1920" height="1200" fetchpriority="high">
+        <!-- Option vidéo : <video autoplay muted loop playsinline poster="images/hero.jpg"><source src="images/hero.mp4" type="video/mp4"></video> -->
+        <img src="images/zo10.jpeg" srcset="images/opt/zo10-640.webp 640w, images/opt/zo10-1170.webp 1170w" sizes="100vw" alt="Chafing-dishes dorés et fleurs jaunes et bleues" width="1170" height="783" fetchpriority="high">
       </div>
       <div class="container hero__content">
         <p class="eyebrow">Gastronomie &amp; service événementiel</p>
@@ -143,8 +143,8 @@
     <section class="section section--ivory" style="padding-top:0" aria-labelledby="maison-title">
       <div class="container split">
         <div class="split__media">
-          <div class="frame reveal-img"><img src="images/placeholders/about.svg" alt="La fondatrice de ZozoMakusa en cuisine (photo à remplacer)" width="1000" height="1250" loading="lazy" decoding="async"></div>
-          <div class="frame frame--small reveal-img"><img src="images/placeholders/about-2.svg" alt="Dressage d'une assiette (photo à remplacer)" width="900" height="1100" loading="lazy" decoding="async"></div>
+          <div class="frame reveal-img"><img src="images/zo2.jpeg" srcset="images/opt/zo2-640.webp 640w, images/opt/zo2-1080.webp 1080w" sizes="(min-width: 1024px) 50vw, 100vw" alt="Verrines de salade de pâtes servies en coupes sur le buffet" width="1080" height="1350" loading="lazy" decoding="async"></div>
+          <div class="frame frame--small reveal-img"><img src="images/zo1.jpeg" srcset="images/opt/zo1-640.webp 640w, images/opt/zo1-720.webp 720w" sizes="25vw" alt="Table gourmande avec biscuits décorés et compositions florales roses" width="720" height="900" loading="lazy" decoding="async"></div>
         </div>
         <div class="split__body">
           <p class="eyebrow reveal"><span class="eyebrow__num">01</span> Notre maison</p>
@@ -175,28 +175,28 @@
         </div>
         <div class="services">
           <article class="service-card reveal" style="--delay:0.00s">
-            <img src="images/placeholders/service-mariage.svg" alt="" width="900" height="1125" loading="lazy" decoding="async" class="service-card__img">
+            <img src="images/zo6.jpeg" srcset="images/opt/zo6-640.webp 640w, images/opt/zo6-1170.webp 1170w" sizes="(min-width: 1024px) 25vw, (min-width: 600px) 50vw, 100vw" alt="" width="1170" height="779" loading="lazy" decoding="async" class="service-card__img">
             <span class="service-card__num">01</span>
             <h3>Mariages</h3>
             <p>Du vin d'honneur au dîner, une cuisine de fête et un service à la hauteur du plus beau jour.</p>
             <a class="link-arrow" href="services.html#mariage">Découvrir</a>
           </article>
           <article class="service-card reveal" style="--delay:0.08s">
-            <img src="images/placeholders/service-entreprise.svg" alt="" width="900" height="1125" loading="lazy" decoding="async" class="service-card__img">
+            <img src="images/zo7.jpeg" srcset="images/opt/zo7-640.webp 640w, images/opt/zo7-1170.webp 1170w" sizes="(min-width: 1024px) 25vw, (min-width: 600px) 50vw, 100vw" alt="" width="1170" height="780" loading="lazy" decoding="async" class="service-card__img">
             <span class="service-card__num">02</span>
             <h3>Entreprises</h3>
             <p>Séminaires, pauses-café, déjeuners d'affaires&nbsp;: la ponctualité et la qualité qui rassurent vos équipes.</p>
             <a class="link-arrow" href="services.html#entreprise">Découvrir</a>
           </article>
           <article class="service-card reveal" style="--delay:0.16s">
-            <img src="images/placeholders/service-prive.svg" alt="" width="900" height="1125" loading="lazy" decoding="async" class="service-card__img">
+            <img src="images/zo8.jpeg" srcset="images/opt/zo8-640.webp 640w, images/opt/zo8-1170.webp 1170w" sizes="(min-width: 1024px) 25vw, (min-width: 600px) 50vw, 100vw" alt="" width="1170" height="780" loading="lazy" decoding="async" class="service-card__img">
             <span class="service-card__num">03</span>
             <h3>Réceptions privées</h3>
             <p>Anniversaires, baptêmes, fêtes de famille&nbsp;: recevoir chez soi ou en salle, sans compter ses efforts.</p>
             <a class="link-arrow" href="services.html#prive">Découvrir</a>
           </article>
           <article class="service-card reveal" style="--delay:0.24s">
-            <img src="images/placeholders/service-cocktail.svg" alt="" width="900" height="1125" loading="lazy" decoding="async" class="service-card__img">
+            <img src="images/zo9.jpeg" srcset="images/opt/zo9-640.webp 640w, images/opt/zo9-1170.webp 1170w" sizes="(min-width: 1024px) 25vw, (min-width: 600px) 50vw, 100vw" alt="" width="1170" height="780" loading="lazy" decoding="async" class="service-card__img">
             <span class="service-card__num">04</span>
             <h3>Cocktails</h3>
             <p>Bouchées, verrines et pièces salées-sucrées, pensées pour se partager debout, en toute élégance.</p>
@@ -265,7 +265,7 @@
 
     <!-- 6. VOTRE ÉVÉNEMENT -->
     <section class="event-banner" aria-labelledby="event-title">
-      <div class="event-banner__media"><img src="images/placeholders/event.svg" alt="" width="1600" height="1000" loading="lazy" decoding="async"></div>
+      <div class="event-banner__media"><img src="images/zo11.jpeg" srcset="images/opt/zo11-640.webp 640w, images/opt/zo11-1170.webp 1170w" sizes="100vw" alt="" width="1170" height="780" loading="lazy" decoding="async"></div>
       <div class="container event-grid">
         <div>
           <p class="eyebrow reveal"><span class="eyebrow__num">04</span> Votre événement</p>
@@ -295,23 +295,23 @@
           <p class="reveal">Quelques instants choisis parmi les événements que nous avons eu le plaisir d'accompagner.</p>
         </div>
         <div class="mosaic">
-          <a class="gallery__item reveal" href="images/placeholders/gallery-01.svg" data-lightbox data-category="mariage" data-caption="Buffet de mariage">
-            <img src="images/placeholders/gallery-01.svg" alt="Buffet de mariage — réalisation ZozoMakusa (photo à remplacer)" width="900" height="900" loading="lazy" decoding="async">
+          <a class="gallery__item reveal" href="images/zo6.jpeg" data-lightbox data-category="buffet" data-caption="Buffet fleuri en extérieur">
+            <img src="images/zo6.jpeg" srcset="images/opt/zo6-640.webp 640w, images/opt/zo6-1170.webp 1170w" sizes="(min-width: 768px) 50vw, 100vw" alt="Buffet dressé en extérieur avec bouquets de fleurs" width="1170" height="779" loading="lazy" decoding="async">
           </a>
-          <a class="gallery__item reveal" href="images/placeholders/gallery-02.svg" data-lightbox data-category="cuisine" data-caption="Plat traditionnel revisité">
-            <img src="images/placeholders/gallery-02.svg" alt="Plat traditionnel revisité — réalisation ZozoMakusa (photo à remplacer)" width="1200" height="900" loading="lazy" decoding="async">
+          <a class="gallery__item reveal" href="images/zo3.jpeg" data-lightbox data-category="cuisine" data-caption="Assiette de service">
+            <img src="images/zo3.jpeg" srcset="images/opt/zo3-640.webp 640w, images/opt/zo3-1170.webp 1170w" sizes="(min-width: 768px) 50vw, 100vw" alt="Assiette garnie : burger, salade de pâtes et samoussa" width="1170" height="779" loading="lazy" decoding="async">
           </a>
-          <a class="gallery__item reveal" href="images/placeholders/gallery-03.svg" data-lightbox data-category="mariage" data-caption="Table d'honneur">
-            <img src="images/placeholders/gallery-03.svg" alt="Table d'honneur — réalisation ZozoMakusa (photo à remplacer)" width="900" height="1200" loading="lazy" decoding="async">
+          <a class="gallery__item reveal" href="images/zo2.jpeg" data-lightbox data-category="cocktail" data-caption="Verrines de pâtes">
+            <img src="images/zo2.jpeg" srcset="images/opt/zo2-640.webp 640w, images/opt/zo2-1080.webp 1080w" sizes="(min-width: 768px) 50vw, 100vw" alt="Verrines de salade de pâtes servies en coupes sur le buffet" width="1080" height="1350" loading="lazy" decoding="async">
           </a>
-          <a class="gallery__item reveal" href="images/placeholders/gallery-04.svg" data-lightbox data-category="cocktail" data-caption="Pièces cocktail">
-            <img src="images/placeholders/gallery-04.svg" alt="Pièces cocktail — réalisation ZozoMakusa (photo à remplacer)" width="900" height="900" loading="lazy" decoding="async">
+          <a class="gallery__item reveal" href="images/zo9.jpeg" data-lightbox data-category="cocktail" data-caption="Verrines sur présentoir doré">
+            <img src="images/zo9.jpeg" srcset="images/opt/zo9-640.webp 640w, images/opt/zo9-1170.webp 1170w" sizes="(min-width: 768px) 50vw, 100vw" alt="Verrines dessert sur présentoir doré" width="1170" height="780" loading="lazy" decoding="async">
           </a>
-          <a class="gallery__item reveal" href="images/placeholders/gallery-05.svg" data-lightbox data-category="cuisine" data-caption="Dessert à l'assiette">
-            <img src="images/placeholders/gallery-05.svg" alt="Dessert à l'assiette — réalisation ZozoMakusa (photo à remplacer)" width="1200" height="900" loading="lazy" decoding="async">
+          <a class="gallery__item reveal" href="images/zo4.jpeg" data-lightbox data-category="cuisine" data-caption="Plat mijoté aux poivrons">
+            <img src="images/zo4.jpeg" srcset="images/opt/zo4-640.webp 640w, images/opt/zo4-1170.webp 1170w" sizes="(min-width: 768px) 50vw, 100vw" alt="Plat mijoté aux poivrons et oignons en chafing-dish" width="1170" height="781" loading="lazy" decoding="async">
           </a>
-          <a class="gallery__item reveal" href="images/placeholders/gallery-06.svg" data-lightbox data-category="entreprise" data-caption="L'équipe en service">
-            <img src="images/placeholders/gallery-06.svg" alt="L'équipe en service — réalisation ZozoMakusa (photo à remplacer)" width="900" height="1200" loading="lazy" decoding="async">
+          <a class="gallery__item reveal" href="images/zo11.jpeg" data-lightbox data-category="buffet" data-caption="Ligne de buffet au jardin">
+            <img src="images/zo11.jpeg" srcset="images/opt/zo11-640.webp 640w, images/opt/zo11-1170.webp 1170w" sizes="(min-width: 768px) 50vw, 100vw" alt="Ligne de chafing-dishes dorés dressée dans un jardin" width="1170" height="780" loading="lazy" decoding="async">
           </a>
         </div>
         <div class="center mt-lg reveal"><a class="btn btn--ghost-dark" href="gallery.html">Voir toute la galerie</a></div>
@@ -383,25 +383,25 @@
             </a>
           </div>
         </div>
-        <!-- PLACEHOLDER : remplacer par des captures des publications (ou un flux Instagram via plugin lors du passage WordPress) -->
+        <!-- Mosaïque de photos ; WordPress : peut être remplacée par un flux Instagram via plugin -->
         <div class="social-grid">
             <a class="social-tile reveal" style="--delay:0.06s" href="https://www.instagram.com/zozomakusa/" target="_blank" rel="noopener" aria-label="Voir la publication sur Instagram">
-              <img src="images/placeholders/social-1.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+              <img src="images/zo1.jpeg" srcset="images/opt/zo1-640.webp 640w, images/opt/zo1-720.webp 720w" sizes="(min-width: 1024px) 18vw, 33vw" alt="" width="720" height="900" loading="lazy" decoding="async">
             </a>
             <a class="social-tile reveal" style="--delay:0.12s" href="https://www.tiktok.com/@zozokndl" target="_blank" rel="noopener" aria-label="Voir la publication sur TikTok">
-              <img src="images/placeholders/social-2.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+              <img src="images/zo9.jpeg" srcset="images/opt/zo9-640.webp 640w, images/opt/zo9-1170.webp 1170w" sizes="(min-width: 1024px) 18vw, 33vw" alt="" width="1170" height="780" loading="lazy" decoding="async">
             </a>
             <a class="social-tile reveal" style="--delay:0.18s" href="https://www.instagram.com/zozomakusa/" target="_blank" rel="noopener" aria-label="Voir la publication sur Instagram">
-              <img src="images/placeholders/social-3.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+              <img src="images/zo3.jpeg" srcset="images/opt/zo3-640.webp 640w, images/opt/zo3-1170.webp 1170w" sizes="(min-width: 1024px) 18vw, 33vw" alt="" width="1170" height="779" loading="lazy" decoding="async">
             </a>
             <a class="social-tile reveal" style="--delay:0.24s" href="https://www.tiktok.com/@zozokndl" target="_blank" rel="noopener" aria-label="Voir la publication sur TikTok">
-              <img src="images/placeholders/social-4.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+              <img src="images/zo8.jpeg" srcset="images/opt/zo8-640.webp 640w, images/opt/zo8-1170.webp 1170w" sizes="(min-width: 1024px) 18vw, 33vw" alt="" width="1170" height="780" loading="lazy" decoding="async">
             </a>
             <a class="social-tile reveal" style="--delay:0.30s" href="https://www.instagram.com/zozomakusa/" target="_blank" rel="noopener" aria-label="Voir la publication sur Instagram">
-              <img src="images/placeholders/social-5.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+              <img src="images/zo2.jpeg" srcset="images/opt/zo2-640.webp 640w, images/opt/zo2-1080.webp 1080w" sizes="(min-width: 1024px) 18vw, 33vw" alt="" width="1080" height="1350" loading="lazy" decoding="async">
             </a>
             <a class="social-tile reveal" style="--delay:0.36s" href="https://www.tiktok.com/@zozokndl" target="_blank" rel="noopener" aria-label="Voir la publication sur TikTok">
-              <img src="images/placeholders/social-6.svg" alt="" width="600" height="750" loading="lazy" decoding="async">
+              <img src="images/zo7.jpeg" srcset="images/opt/zo7-640.webp 640w, images/opt/zo7-1170.webp 1170w" sizes="(min-width: 1024px) 18vw, 33vw" alt="" width="1170" height="780" loading="lazy" decoding="async">
             </a>
         </div>
       </div>
@@ -429,7 +429,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html" aria-label="ZozoMakusa — accueil">
-            <svg class="brand__mark" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M32 3 61 32 32 61 3 32Z"/><path d="M32 9 55 32 32 55 9 32Z" stroke-opacity=".45"/><path d="M23 24h18L23 40h18" stroke-width="2.4" stroke-linecap="square"/></svg>
+            <img class="brand__logo" src="images/logo-zozomakusa.png" width="228" height="228" alt="">
             <span class="brand__name">ZozoMakusa<small>Gastronomie &amp; événements</small></span>
           </a>
           <p>Cuisine généreuse, service attentionné et mise en scène soignée pour vos mariages, réceptions privées et événements d'entreprise.</p>

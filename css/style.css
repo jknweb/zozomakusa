@@ -335,6 +335,7 @@ p { max-width: 65ch; text-wrap: pretty; }
   z-index: 2;
 }
 .brand__mark { width: 36px; height: 36px; color: var(--gold); }
+.brand__logo { width: 52px; height: 52px; flex: none; object-fit: contain; }
 .brand__name {
   font-family: var(--font-serif);
   font-size: 1.5rem;
@@ -490,8 +491,8 @@ p { max-width: 65ch; text-wrap: pretty; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(13,12,11,.55) 0%, rgba(13,12,11,.05) 30%, rgba(13,12,11,.35) 60%, rgba(13,12,11,.95) 100%),
-    linear-gradient(90deg, rgba(13,12,11,.6) 0%, rgba(13,12,11,0) 70%);
+    linear-gradient(180deg, rgba(13,12,11,.7) 0%, rgba(13,12,11,.35) 30%, rgba(13,12,11,.55) 60%, rgba(13,12,11,.96) 100%),
+    linear-gradient(90deg, rgba(13,12,11,.75) 0%, rgba(13,12,11,.15) 75%);
 }
 @keyframes heroZoom { to { transform: scale(1); } }
 
@@ -1398,9 +1399,10 @@ p { max-width: 65ch; text-wrap: pretty; }
 }
 
 /* Mobile : header compact */
-@media (max-width: 413px) {
+@media (max-width: 479px) {
   .brand { gap: .6rem; }
   .brand__mark { width: 30px; height: 30px; }
+  .brand__logo { width: 44px; height: 44px; }
   .brand__name { font-size: 1.3rem; }
   .brand__name small { letter-spacing: .22em; font-size: .5rem; }
   .menu-toggle__text { display: none; }
