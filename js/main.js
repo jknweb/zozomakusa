@@ -25,7 +25,7 @@
      (WordPress : cette valeur pourra venir d'une option du thème via
      wp_localize_script.) */
   var CONFIG = {
-    WHATSAPP_NUMBER: 'WHATSAPP_NUMBER',
+    WHATSAPP_NUMBER: '243833649217',
     messages: {
       quote: 'Bonjour ZozoMakusa, je souhaite obtenir un devis pour mon événement.',
       book: 'Bonjour ZozoMakusa, je souhaite réserver une prestation. Type d\'événement : [type], Date : [date], Nombre d\'invités : [nombre].'

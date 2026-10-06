@@ -26,15 +26,15 @@ images/opt/       Versions WebP responsives des photos (640px + pleine largeur),
 - **Signature** : losange et filets fins inspirés des motifs textiles d'Afrique centrale, numérotation éditoriale des sections, beaucoup d'espace, grandes images, transitions lentes et discrètes.
 - Toutes les couleurs, tailles et espacements sont des variables CSS dans `:root` (`css/style.css`).
 
-## WhatsApp — à configurer en premier
+## WhatsApp
 
 Dans `js/main.js` :
 
 ```js
-WHATSAPP_NUMBER: 'WHATSAPP_NUMBER',  // → ex. '243XXXXXXXXX' (format international, chiffres uniquement)
+WHATSAPP_NUMBER: '243833649217',  // format international, chiffres uniquement
 ```
 
-Tant que le numéro n'est pas renseigné, les liens ouvrent WhatsApp avec le message pré-rempli mais sans destinataire.
+Numéro configuré : +243 833 649 217 (affiché dans le footer, la page contact et la FAQ).
 
 Messages automatiques :
 - Devis (`data-wa="quote"`) : « Bonjour ZozoMakusa, je souhaite obtenir un devis pour mon événement. »
@@ -43,6 +43,12 @@ Messages automatiques :
 - Message libre : attribut `data-wa-message="..."` (utilisé pour « Devis formule Gold », etc.).
 - Pré-remplissage du formulaire par URL : `contact.html?type=Mariage&formule=Gold`.
 
+## Informations de la maison (intégrées)
+
+- Slogan : « Traiteur Événementiel : Mariages, Anniversaires, Séminaires, Baptêmes, Pause café d'Entreprise » (hero, footer, SEO, image Open Graph)
+- WhatsApp : +243 833 649 217 · Kinshasa, R.D. Congo · Disponible 24h/24
+- Fondatrice : Zozo
+
 ## Contenus à fournir (placeholders)
 
 Tous les contenus manquants sont balisés `<span class="ph">[…]</span>` (soulignés en pointillés champagne) :
@@ -50,9 +56,8 @@ recherchez `class="ph"` dans les fichiers HTML.
 
 | Élément | Où |
 |---|---|
-| Numéro WhatsApp | `js/main.js` + footer + page contact |
-| Email, ville/zone d'intervention, horaires | footer, contact, FAQ |
-| Histoire de la maison, nom de la fondatrice | accueil, about |
+| Email | footer, contact |
+| Histoire de la maison et parcours de Zozo | accueil, about |
 | Plats, prix par personne, minimum d'invités | accueil, menus |
 | Inclus/options (service, matériel, boissons) | services, FAQ |
 | Avis clients réels (les textes actuels sont des exemples identifiés) | accueil |

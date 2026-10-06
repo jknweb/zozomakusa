@@ -1363,6 +1363,7 @@ p { max-width: 65ch; text-wrap: pretty; }
   .menu-toggle { display: none; }
   .mobile-menu { display: none; }
   .hero__pillars li:nth-child(4) { display: flex; }
+  .hero__pillars li:nth-child(5) { display: flex; }
   .split { grid-template-columns: 1fr 1fr; }
   .split--reverse .split__media { order: 2; }
   .services { grid-template-columns: repeat(4, 1fr); }
