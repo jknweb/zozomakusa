@@ -15,7 +15,7 @@ gallery.html      Réalisations (galerie filtrable + lightbox)
 contact.html      Demande de réservation → WhatsApp
 css/style.css     Design system complet (tokens, composants, responsive)
 js/main.js        WhatsApp, navigation, menu mobile, animations, galerie, slider, formulaire
-images/           Photos zo1–zo11 (originaux), logo (logozozo.jpg + logo-zozomakusa.png détouré), favicons, image Open Graph
+images/           Photos zo* et zozo01–zozo10 (originaux), logo (logozozo.jpg + logo-zozomakusa.png détouré), favicons, image Open Graph
 images/opt/       Versions WebP responsives des photos (640px + pleine largeur), servies via srcset
 ```
 
@@ -69,16 +69,18 @@ recherchez `class="ph"` dans les fichiers HTML.
 ### Photos et logo
 
 - Le logo officiel `images/logozozo.jpg` est recadré et détouré dans `images/logo-zozomakusa.png` (header, footer). Il sert aussi pour les favicons et l'image Open Graph.
-- Les photos `zo1` à `zo11` remplissent le hero, les prestations, les formules, la galerie (filtres Buffets / Cuisine / Cocktail & desserts / Service), la mosaïque d'accueil et la section réseaux.
+- Les photos `zo*` et `zozo01` à `zozo10` remplissent le hero (`zozo04`), les prestations, les formules, la galerie (18 photos, filtres Buffets / Cuisine / Cocktail & desserts / Service), la mosaïque d'accueil et la section réseaux.
+- Les photos montrant des visages (anciennes `zo6`, `zo7`, `zo8`) ont été retirées du site.
+- Pour changer une photo, remplacez `images/xxx.jpeg` et ses versions `images/opt/xxx-*.webp` (chercher `images/zozo` ou `images/zo` dans le HTML).
 - Chaque photo est servie en WebP responsive (`images/opt/zoN-640.webp` + pleine largeur) avec le JPEG d'origine en secours.
-- Les photos font ~1170px de large : pour un hero encore plus net sur grand écran, fournir une version ≥ 1920px.
+- Les photos font ~1080–1170px de large : pour un hero encore plus net sur grand écran, fournir une version ≥ 1920px.
 
 Pour ajouter une photo, déposez-la dans `images/`, créez ses versions WebP dans `images/opt/`, puis :
 
 ```html
-<img src="images/zo12.jpeg"
-     srcset="images/opt/zo12-640.webp 640w, images/opt/zo12-1170.webp 1170w"
-     sizes="(min-width: 1024px) 25vw, 100vw" width="1170" height="780" loading="lazy" decoding="async" alt="…">
+<img src="images/zozo11.jpeg"
+     srcset="images/opt/zozo11-640.webp 640w, images/opt/zozo11-1080.webp 1080w"
+     sizes="(min-width: 1024px) 25vw, 100vw" width="1080" height="720" loading="lazy" decoding="async" alt="…">
 ```
 
 Le hero accepte une vidéo (code prêt en commentaire dans `index.html`).
