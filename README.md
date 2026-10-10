@@ -106,3 +106,13 @@ npx serve .          # ou : python3 -m http.server 8080
 - Les blocs `<!-- HEADER (WordPress : header.php) -->` et `<!-- FOOTER (WordPress : footer.php) -->` sont identiques sur toutes les pages → `header.php` / `footer.php`.
 - Chaque page → un template (`front-page.php`, `page-about.php`, …) ; les cartes (prestations, formules, galerie, avis) se prêtent à des Custom Post Types ou des champs ACF répétables.
 - `css/style.css` → `style.css` du thème (ajouter l'en-tête de thème) ; `js/main.js` via `wp_enqueue_script`, avec le numéro WhatsApp passé par `wp_localize_script`.
+
+## Thème WordPress (`wordpress/`)
+
+`wordpress/zozomakusa/` est un thème bloc (WordPress 6.6 ou plus) construit avec le skill
+`.claude/skills/wordpress-pro-design` : cloche en laiton, carte de menu, étiquettes de plats, devis WhatsApp.
+
+- Installer : téléverser `wordpress/zozomakusa.zip` dans Apparence › Thèmes › Ajouter.
+- Prise en main : `wordpress/zozomakusa/GUIDE-UTILISATION.md`.
+- Choix de design (palette, polices, mise en page) : `wordpress/zozomakusa/DESIGN.md`.
+- Polices hébergées dans le thème : plus d'appel à Google Fonts.
